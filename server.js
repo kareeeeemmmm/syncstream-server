@@ -26,6 +26,6 @@ io.on('connection', (socket) => {
   });
 });
 
-// MODIFICA PER IL CLOUD: Usiamo la porta dinamica di Glitch
+// Questa riga è quella fondamentale per il Cloud!
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => console.log(`Server online sulla porta ${PORT}`));
